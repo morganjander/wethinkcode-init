@@ -1,0 +1,2 @@
+#!/bin/sh
+ip link show eth0 | grep "link/ether " | tr -d link/ether | sed -e 's/[ \t]*//'
